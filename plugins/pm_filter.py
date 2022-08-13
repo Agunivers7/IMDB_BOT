@@ -392,7 +392,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton('SERIES', url='https://t.me/+lSMIQZi317kxOWJl')
             ],
             [
-                InlineKeyboardButton('GROUP', url=f'https://t.me/Agunivers_backup')
+                InlineKeyboardButton('APEX', url=f'https://t.me/ApexlegendsAG')
             ]
             ]
 
@@ -442,11 +442,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         buttons = [
             [
-                InlineKeyboardButton('⭕️ Support', url='https://t.me/JOSPSupport'),
-                InlineKeyboardButton('Channel ⭕️', url='https://t.me/JosProjects')
+                InlineKeyboardButton('Support', url='https://t.me/+-VTuSl1PSf8xODk1'),
+                InlineKeyboardButton('Channel', url='https://t.me/+lSMIQZi317kxOWJl')
             ],
             [
-                InlineKeyboardButton('🎬 Series & Movie Club 🎬', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+                InlineKeyboardButton('APEX support', url=f'https://t.me/ApexlegendsAG')
             ]
             ]
         await query.answer()
@@ -948,7 +948,7 @@ async def auto_filter(client, msg, spoll=False):
         InlineKeyboardButton("Series", url="https://t.me/+lSMIQZi317kxOWJl")
     ])
     btn.insert(0, [
-        InlineKeyboardButton("Join Our Channel",url="https://t.me/+-VTuSl1PSf8xODk1")
+        InlineKeyboardButton("Join Our Channel",url="https://t.me/ApexlegendsAG")
     ])
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
@@ -1002,12 +1002,12 @@ async def auto_filter(client, msg, spoll=False):
             await message.delete()
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_photo(photo="https://telegra.ph/file/82b5bbbab6d5e5593b6b2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo="https://telegra.ph/file/c6828f2cdc3e6e912ac05.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(36000)
             await fek.delete()
             await msg.delete()
     else:
-        fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo="https://telegra.ph/file/5b96b366955ce4505c244.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(36000)
         await fuk.delete()
         await msg.delete()
@@ -1056,11 +1056,11 @@ async def advantage_spell_chok(msg):
     if not movielist:
         button = InlineKeyboardMarkup(
         [[
-           InlineKeyboardButton("✅ Google ✅", url=f"https://www.google.com/search?q={search}")
+           InlineKeyboardButton("APEX-Google", url=f"https://www.google.com/search?q={search}")
         ],
         [
-           InlineKeyboardButton("⭕️ IMDb", url=f"https://www.imdb.com/find?q={search}"),
-           InlineKeyboardButton("Wikipedia ⭕️", url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
+           InlineKeyboardButton("IMDb", url=f"https://www.imdb.com/find?q={search}"),
+           InlineKeyboardButton("Wikipedia", url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
         ]])
         k = await msg.reply(f"Hey, Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=button)
         await asyncio.sleep(60)
