@@ -27,7 +27,7 @@ GPLINKS_API = os.environ.get("GPLINKS_API", "008ccaedd6061ad1948838f410947603de9
 
 reply_markup = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text='join projects channel', url='https://telegram.me/josprojects')
+        InlineKeyboardButton(text='𝙅𝙤𝙞𝙣 𝘼𝙥𝙚𝙭 𝙥𝙧𝙤𝙟𝙚𝙘𝙩𝙨', url='https://t.me/ApexlegendsAG')
         ]]
     )
 
@@ -190,7 +190,7 @@ async def short(link):
     
     # Send the text
     try:
-        shorten_urls += "\n\nmade by @josprojects | @jospsupport 🔥"
+        shorten_urls += "\n\nmade by @ApexlegdsAG | @Spoidermon12"
         return shorten_urls
     except Exception as error:
         return error
