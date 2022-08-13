@@ -46,7 +46,10 @@ async def next_page(bot, query):
         pass
     elif int(req) not in [query.from_user.id, 0]:
         return await query.answer(
-            "All right, but this is not yours.;\nNice Try! But, This Was Not Your Request, Request Yourself;",
+           "𝙉𝙞𝙘𝙚 𝙩𝙧𝙮 𝙗𝙧𝙤, 𝙗𝙪𝙩 𝙩𝙝𝙞𝙨 𝙞𝙨 𝙣𝙤𝙩 𝙮𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩. 
+                𝙋𝙡𝙚𝙖𝙨𝙚 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙮𝙤𝙪𝙧𝙨𝙚𝙡𝙛.
+                                    𝘽𝙮
+                            - 𝘼𝙜𝙪𝙣𝙞𝙫𝙚𝙧𝙨 𝘼𝙙𝙢𝙞𝙣",
             show_alert=True)
     try:
         offset = int(offset)
@@ -360,10 +363,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             pass
         elif int(user) != 0 and query.from_user.id != int(user):
             return await query.answer(
-                𝙉𝙞𝙘𝙚 𝙩𝙧𝙮 𝙗𝙧𝙤, 𝙗𝙪𝙩 𝙩𝙝𝙞𝙨 𝙞𝙨 𝙣𝙤𝙩 𝙮𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩. 
+               "𝙉𝙞𝙘𝙚 𝙩𝙧𝙮 𝙗𝙧𝙤, 𝙗𝙪𝙩 𝙩𝙝𝙞𝙨 𝙞𝙨 𝙣𝙤𝙩 𝙮𝙤𝙪𝙧 𝙧𝙚𝙦𝙪𝙚𝙨𝙩. 
                 𝙋𝙡𝙚𝙖𝙨𝙚 𝙧𝙚𝙦𝙪𝙚𝙨𝙩 𝙮𝙤𝙪𝙧𝙨𝙚𝙡𝙛.
                                     𝘽𝙮
-                            - 𝘼𝙜𝙪𝙣𝙞𝙫𝙚𝙧𝙨 𝘼𝙙𝙢𝙞𝙣
+                            - 𝘼𝙜𝙪𝙣𝙞𝙫𝙚𝙧𝙨 𝘼𝙙𝙢𝙞𝙣",
                 show_alert=True)
 
         if not files_:
